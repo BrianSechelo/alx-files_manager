@@ -5,6 +5,7 @@ import { ObjectId } from 'mongodb';
 import mime from 'mime-types';
 import dbClient from '../utils/db';
 import redisClient from '../utils/redis';
+import { fileQueue } from '../worker';
 
 class FilesController {
   static async postUpload(req, res) {
